@@ -1,0 +1,7 @@
+2020-06-12 09:53:33,890 WARNING: Failed to parse headers (url=http://127.0.0.1:88/download?BlockToken=01d6403becf973ecab3de90093b82e07): [MissingHeaderBodySeparatorDefect()], unparsed data: 'é\x89n\x02\x00\x00nt; filename="01d6403becf973ecab3de90093b82e07.zip"\r\nContent-Length: 3521178\r\n\r\n'
+Traceback (most recent call last):
+  File "anonymized\venv\FetchingUI\lib\site-packages\urllib3\connectionpool.py", line 446, in _make_request
+    assert_header_parsing(httplib_response.msg)
+  File "anonymized\venv\FetchingUI\lib\site-packages\urllib3\util\response.py", line 71, in assert_header_parsing
+    raise HeaderParsingError(defects=defects, unparsed_data=unparsed_data)
+urllib3.exceptions.HeaderParsingError: [MissingHeaderBodySeparatorDefect()], unparsed data: 'é\x89n\x02\x00\x00nt; filename="01d6403becf973ecab3de90093b82e07.zip"\r\nContent-Length: 3521178\r\n\r\n'
